@@ -75,6 +75,7 @@ gulp.task("serve", function(done) {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("style"));
+  gulp.watch("source/sass/**/*.{scss,sass}").on("change", server.reload);
   gulp.watch("source/js/*.js").on("change", gulp.series("copy-js"));
   gulp.watch("source/js/*.js").on("change", server.reload);
   gulp.watch("source/*.html").on("change", gulp.series("copy-html"));
