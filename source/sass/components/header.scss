@@ -1,0 +1,29 @@
+.header {
+  display: grid;
+  grid-template-columns: minmax(75rem, 117rem);
+  justify-content: center;
+
+  height: 100vh;
+  padding-top: 3.7rem;
+
+  background-image: url(../img/hero-bg.jpg),
+                    linear-gradient(to right bottom, var(--pink-dark), var(--pink-light));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title-1,
+  &__title-2 {
+    font-size: 3.7rem;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__title-1 {
+    font-weight: 100;
+  }
+
+  &__title-2 {
+    font-weight: 700;
+  }
+}
