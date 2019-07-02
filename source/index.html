@@ -13,13 +13,13 @@
 </head>
 <body>
   <header class="header">
-    <div class="logo">
+    <a class="logo">
       <svg class="logo__icon" width="48" height="48">
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
       <p class="logo__text">Pantheon</p>
       <p class="logo__undertext">project</p>
-    </div>
+    </a>
 
     <h1 class="header__title">
       <span class="header__title-1">Destination:</span>
@@ -27,11 +27,13 @@
       <span class="header__title-3">Mars</span>
     </h1>
 
-    <video class="header__video" src="#" poster="img/hero-video.jpg" width="214" height="139"></video>
+    <div class="header__video">
+      <video class="header__video-content" src="#" poster="img/hero-video.jpg" width="214" height="139"></video>
+      <p class="header__video-text">First town on Mars planet a little way from Olimp Mons</p>
+      <button class="btn-play header__video-btn"></button>
+    </div>
 
-    <p class="header__description">First town on Mars planet a little way from Olimp Mons</p>
-
-    <button class="btn-down">Down</button>
+    <button class="btn-down header__down">Down</button>
   </header>
 </body>
 </html>
